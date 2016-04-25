@@ -19,15 +19,18 @@ if(empty($_GET)){
     require_once "vues/acteur.php";
 }elseif(isset($_GET['idreal']) && ctype_digit($_GET['idreal'])){
     $idreal = $_GET['idreal'];
-    require_once "modeles/real.php";
+    require_once "modeles/detreal.php";
     $title .= "Réalisateur";
-    require_once "vues/reali.php";
-}
-elseif(isset($_GET['idgenre']) && ctype_digit($_GET['idgenre'])){
+    require_once "vues/detreal.php";
+}elseif(isset($_GET['idgenre']) && ctype_digit($_GET['idgenre'])){
     $idgenre = $_GET['idgenre'];
     require_once "modeles/genre.php";
     $title .= "Genre";
     require_once "vues/genre.php";
+}elseif(isset($_GET['real']) && ctype_digit($_GET['real'])){
+    require_once "modeles/real.php";
+    $title .= "Liste des réalisateurs";
+    require_once "vues/real.php";
 }else{
     require_once "modeles/acceuil.php";
     $title .= "Acceuil";
