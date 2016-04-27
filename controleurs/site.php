@@ -22,19 +22,19 @@ if(empty($_GET)){
     require_once "modeles/detreal.php";
     $title .= "Détail réalisateur";
     require_once "vues/detreal.php";
-}elseif(isset($_GET['real']) && ctype_digit($_GET['real']) && $_GET['real']==1){
+}elseif(isset($_GET['se']) && $_GET['se']=="real"){
     require_once "modeles/real.php";
     $title .= "Liste des réalisateurs";
     require_once "vues/real.php";
-}elseif(isset($_GET['acteur']) && ctype_digit($_GET['acteur']) && $_GET['acteur']==1){
+}elseif(isset($_GET['se']) && $_GET['se']=="acteur"){
     require_once "modeles/acteur.php";
     $title .= "Liste des acteur";
     require_once "vues/acteur.php";
-}elseif(isset($_GET['serie']) && ctype_digit($_GET['serie']) && $_GET['serie']==1){
+}elseif(isset($_GET['se']) && $_GET['se']=="serie"){
     require_once "modeles/serie.php";
     $title .= "Liste des séries";
     require_once "vues/serie.php";
-}elseif(isset($_GET['connex']) && ctype_digit($_GET['connex']) && $_GET['connex']==1){
+}elseif(isset($_GET['se']) && $_GET['se']=="connex"){
     require_once "modeles/connex.php";
     $title .= "Connexion";
     require_once "vues/connex.php";

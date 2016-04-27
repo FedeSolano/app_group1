@@ -45,12 +45,51 @@ a:hover{
 }
 #contener #BlockGauche #article{
 	width:320px;
-	height:300px;
 	border-radius:20px;
 	background:rgba(200,200,200,1);
 	margin-top:30px;
 	margin-left:20px;
 	float:left;
+}
+#contener #BlockGauche #article_acteur{
+	width:320px;
+	height:450px;
+	border-radius:20px;
+	background:rgba(200,200,200,1);
+	margin-top:30px;
+	margin-left:20px;
+	float:left;
+}#contener #BlockGauche #article_acteur .titre{
+	font-family: 'Indie Flower', cursive;
+	font-size:17px;
+	text-align:center;
+}
+#contener #BlockGauche #article_acteur .image{
+	width:150px;
+	height:150px;
+	margin-left:10px;
+	float:left;
+}
+#contener #BlockGauche #article_acteur .rubrique{
+	font-family: 'Indie Flower', cursive;
+	font-size:13px;
+	text-align:center;
+}
+#contener #BlockGauche #article_acteur .texte{
+	font-family: 'Indie Flower', cursive;
+	font-size:12px;
+	float:left;
+	width:290px;
+	margin-left:10px;
+}
+#contener #BlockGauche #article_acteur .soustitre{
+	font-size:16px;
+}
+#contener #BlockGauche #article_acteur .texte2{
+	clear:both;
+	font-family: 'Indie Flower', cursive;
+	font-size:12px;
+	padding:10px;
 }
 #contener #BlockGauche #article2{
 	width:700px;
@@ -258,4 +297,25 @@ table{
 }
 #warper #contener #BlockGauche #article input[type="submit"]{
 	width:90px;
+}
+#pagination{
+	width:100%;
+	float:left;
+	margin-top:20px;
+	text-align: center;
+	font-size: 23px;
+	
+}
+#pagination a{
+	padding-left:6px;
+	padding-right:6px;
+	
+	background:blue;
+	color: white;
+}
+#pagination a:hover{
+	text-decoration:none;
+	background-color:orange;
+	background-color:orange;
+	
 }
